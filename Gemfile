@@ -77,7 +77,7 @@ gem "oauth", "~> 0.5.5"
 gem "omniauth-oauth2"
 
 gem "image_processing", "~> 1.2"
-gem "sidekiq"
+gem "sidekiq", ">= 7.0.8"
 gem "sidekiq-cron"
 gem "webpacker", "~> 5.4.0"
 
