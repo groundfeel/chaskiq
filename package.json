@@ -23,7 +23,7 @@
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@headlessui/react": "^1.2.0",
     "@nivo/calendar": "^0.63.1",
-    "@nivo/pie": "^0.63.1",
+    "@nivo/pie": "^0.81.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/webpacker": "5.4.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
