@@ -9,7 +9,7 @@ ruby "2.7.5"
 gem "pg"
 gem "rails", "6.1.4.1" # , github: "rails/rails",
 
-gem "anycable-rails"
+gem "anycable-rails", ">= 1.0.5"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # gem "sqlite3", "~> 1.3.6"
@@ -64,7 +64,7 @@ gem "geocoder", "~> 1.6"
 gem "geoip"
 gem "truemail"
 
-gem "google-cloud-dialogflow"
+gem "google-cloud-dialogflow", ">= 1.3.1"
 
 gem "jwe"
 gem "jwt"
