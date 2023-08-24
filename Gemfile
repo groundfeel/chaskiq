@@ -7,30 +7,30 @@ ruby "2.7.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "pg"
-gem "rails", "6.1.4.1" # , github: "rails/rails",
+gem "rails", "6.1.7.5" # , github: "rails/rails",
 
-gem "anycable-rails"
+gem "anycable-rails", ">= 1.0.5"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # gem "sqlite3", "~> 1.3.6"
 # Use Puma as the app server
 gem "puma", "~> 5.5"
 # Use SCSS for stylesheets
-gem "sass-rails", "~> 5.0"
+gem "sass-rails", "~> 6.0", ">= 6.0.0"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem "haml"
 
-gem "devise", "4.7.1" # github: "plataformatec/devise"
+gem "devise", "4.7.2" # github: "plataformatec/devise"
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem "turbolinks", "~> 5"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder"
+gem "jbuilder", ">= 2.10.2"
 # gem 'haml'
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
@@ -43,21 +43,21 @@ gem "nightfury", github: "michelson/nightfury" # "~> 1.0"
 # gem 'tabs', github: 'michelson/tabs', branch: "upgrade"
 
 gem "action_policy-graphql", "~> 0.4"
-gem "goldiloader"
-gem "graphiql-rails", group: :development
+gem "goldiloader", ">= 4.0.0"
+gem "graphiql-rails", ">= 1.8.0", group: :development
 gem "graphql"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # gem 'tunable'
 gem "aasm"
-gem "acts_as_list", "~> 0.9.19"
+gem "acts_as_list", "~> 1.0.0"
 gem "acts-as-taggable-on", github: "mbleigh/acts-as-taggable-on"
-gem "deep_cloneable"
-gem "friendly_id", "~> 5.2"
-gem "groupdate"
-gem "pg_search"
-gem "ransack"
+gem "deep_cloneable", ">= 3.1.0"
+gem "friendly_id", "~> 5.4", ">= 5.4.2"
+gem "groupdate", ">= 5.2.2"
+gem "pg_search", ">= 2.3.6"
+gem "ransack", ">= 2.4.1"
 
 gem "browser", "~> 2.5"
 gem "geocoder", "~> 1.6"
@@ -71,22 +71,22 @@ gem "jwt"
 
 # AUTH
 # gem 'devise-jwt', '~> 0.5.9'
-gem "devise_invitable", "~> 2.0"
-gem "doorkeeper", "~> 5.4"
+gem "devise_invitable", "~> 2.0", ">= 2.0.4"
+gem "doorkeeper", "~> 5.5", ">= 5.5.0"
 gem "oauth", "~> 0.5.5"
 gem "omniauth-oauth2"
 
 gem "image_processing", "~> 1.2"
 gem "sidekiq"
 gem "sidekiq-cron"
-gem "webpacker", "~> 5.4.0"
+gem "webpacker", "~> 5.4.1"
 
 gem "emoji_data", github: "chaskiq/emoji_data.rb"
 gem "roadie"
-gem "roadie-rails"
+gem "roadie-rails", ">= 2.3.0"
 gem "urlcrypt"
 
-gem "aws-sdk-rails"
+gem "aws-sdk-rails", ">= 3.6.2"
 gem "aws-sdk-s3", "~> 1.48"
 gem "draftjs_exporter", github: "chaskiq/draftjs_exporter"
 
@@ -101,7 +101,7 @@ gem "ruby-oembed"
 gem "mustache"
 
 gem "chronic", "~> 0.10.2"
-gem "kaminari", "~> 1.2"
+gem "kaminari", "~> 1.2", ">= 1.2.2"
 
 gem "timezone", "~> 1.2"
 
@@ -119,7 +119,7 @@ gem "globalize", github: "globalize/globalize"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.1.0", require: false
 
-gem "dotenv-rails", groups: %i[development test]
+gem "dotenv-rails", ">= 2.8.0", groups: %i[development test]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -133,28 +133,28 @@ group :development do
   gem "rack-mini-profiler", "~> 2.0"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "listen", ">= 3.0.5", "< 3.2"
-  gem "web-console", ">= 3.3.0"
+  gem "web-console", ">= 4.2.0"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
 end
 
 group :test do
   gem "faker", github: "stympy/faker", group: %i[development test]
-  gem "rspec-rails" # , git: 'https://github.com/rspec/rspec-rails', branch: '4-0-dev'
+  gem "rspec-rails" , ">= 4.0.2" # , git: 'https://github.com/rspec/rspec-rails', branch: '4-0-dev'
   %w[rspec-core rspec-expectations rspec-mocks rspec-support].each do |lib|
     gem lib # , :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
   end
   gem "brakeman"
   gem "code-scanning-rubocop", require: false
-  gem "database_cleaner-active_record"
+  gem "database_cleaner-active_record", ">= 1.99.0"
   gem "database_cleaner-redis"
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", ">= 6.2.0"
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop-rails", ">= 2.11.0", require: false
   gem "rubocop-rspec", require: false
   gem "shoulda"
-  gem "shoulda-matchers"
+  gem "shoulda-matchers", ">= 4.5.0"
   gem "webmock"
 end
 
