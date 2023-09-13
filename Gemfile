@@ -77,8 +77,8 @@ gem "oauth", "~> 0.5.5"
 gem "omniauth-oauth2"
 
 gem "image_processing", "~> 1.2"
-gem "sidekiq"
-gem "sidekiq-cron"
+gem "sidekiq", ">= 7.1.3"
+gem "sidekiq-cron", ">= 1.3.0"
 gem "webpacker", "~> 5.4.0"
 
 gem "emoji_data", github: "chaskiq/emoji_data.rb"
