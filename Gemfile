@@ -7,23 +7,23 @@ ruby "2.7.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "pg"
-gem "rails", "6.1.4.1" # , github: "rails/rails",
+gem "rails", "7.1.0" # , github: "rails/rails",
 
-gem "anycable-rails"
+gem "anycable-rails", ">= 1.4.1"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # gem "sqlite3", "~> 1.3.6"
 # Use Puma as the app server
 gem "puma", "~> 5.5"
 # Use SCSS for stylesheets
-gem "sass-rails", "~> 5.0"
+gem "sass-rails", "~> 6.0", ">= 6.0.0"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem "haml"
 
-gem "devise", "4.7.1" # github: "plataformatec/devise"
+gem "devise", "4.7.2" # github: "plataformatec/devise"
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
@@ -44,7 +44,7 @@ gem "nightfury", github: "michelson/nightfury" # "~> 1.0"
 
 gem "action_policy-graphql", "~> 0.4"
 gem "goldiloader"
-gem "graphiql-rails", group: :development
+gem "graphiql-rails", ">= 1.8.0", group: :development
 gem "graphql"
 
 # Use Capistrano for deployment
@@ -71,22 +71,22 @@ gem "jwt"
 
 # AUTH
 # gem 'devise-jwt', '~> 0.5.9'
-gem "devise_invitable", "~> 2.0"
-gem "doorkeeper", "~> 5.4"
+gem "devise_invitable", "~> 2.0", ">= 2.0.4"
+gem "doorkeeper", "~> 5.5", ">= 5.5.0"
 gem "oauth", "~> 0.5.5"
 gem "omniauth-oauth2"
 
 gem "image_processing", "~> 1.2"
 gem "sidekiq"
 gem "sidekiq-cron"
-gem "webpacker", "~> 5.4.0"
+gem "webpacker", "~> 5.4.1"
 
 gem "emoji_data", github: "chaskiq/emoji_data.rb"
 gem "roadie"
 gem "roadie-rails"
 gem "urlcrypt"
 
-gem "aws-sdk-rails"
+gem "aws-sdk-rails", ">= 3.6.2"
 gem "aws-sdk-s3", "~> 1.48"
 gem "draftjs_exporter", github: "chaskiq/draftjs_exporter"
 
@@ -119,7 +119,7 @@ gem "globalize", github: "globalize/globalize"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.1.0", require: false
 
-gem "dotenv-rails", groups: %i[development test]
+gem "dotenv-rails", ">= 2.8.0", groups: %i[development test]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -133,14 +133,14 @@ group :development do
   gem "rack-mini-profiler", "~> 2.0"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "listen", ">= 3.0.5", "< 3.2"
-  gem "web-console", ">= 3.3.0"
+  gem "web-console", ">= 4.2.0"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
 end
 
 group :test do
   gem "faker", github: "stympy/faker", group: %i[development test]
-  gem "rspec-rails" # , git: 'https://github.com/rspec/rspec-rails', branch: '4-0-dev'
+  gem "rspec-rails" , ">= 4.0.2" # , git: 'https://github.com/rspec/rspec-rails', branch: '4-0-dev'
   %w[rspec-core rspec-expectations rspec-mocks rspec-support].each do |lib|
     gem lib # , :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
   end
@@ -148,7 +148,7 @@ group :test do
   gem "code-scanning-rubocop", require: false
   gem "database_cleaner-active_record"
   gem "database_cleaner-redis"
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", ">= 6.2.0"
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
