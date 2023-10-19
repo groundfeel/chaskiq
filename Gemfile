@@ -83,7 +83,7 @@ gem "webpacker", "~> 5.4.0"
 
 gem "emoji_data", github: "chaskiq/emoji_data.rb"
 gem "roadie"
-gem "roadie-rails"
+gem "roadie-rails", ">= 3.1.0"
 gem "urlcrypt"
 
 gem "aws-sdk-rails"
