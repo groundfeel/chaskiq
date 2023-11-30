@@ -96,12 +96,12 @@
     "sass": "^1.32.7",
     "simmerjs": "^0.5.6",
     "simple-peer": "^9.7.0",
-    "tailwindcss": "^2.2.7",
-    "twin.macro": "^2.4.2",
+    "tailwindcss": "^3.0.0",
+    "twin.macro": "^3.0.0",
     "ua-parser-js": "^0.7.20",
     "url-pattern": "^1.0.3",
     "webpack-bundle-analyzer": "^3.6.0",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^4.0.0"
   },
   "devDependencies": {
     "@atomico/rollup-plugin-sizes": "^1.1.4",
